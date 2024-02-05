@@ -1,0 +1,7 @@
+def km_to_miles(kilometers):
+    miles = kilometers / 1.60934
+    return miles
+
+kilometers = float(input("Введіть відстань у кілометрах: "))
+miles = km_to_miles(kilometers)
+print(f"{kilometers} кілометрів дорівнює {miles} милям.")
