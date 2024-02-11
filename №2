@@ -1,0 +1,17 @@
+def power(base, exponent):
+    result = 1
+
+    if exponent < 0:
+        base = 1 / base
+        exponent = -exponent
+
+    while exponent:
+        if exponent & 1:
+            result *= base
+        exponent >>= 1
+        base *= base
+
+    return result
+
+print(power(2, 3))  
+print(power(5, -2))  
