@@ -1,0 +1,7 @@
+def capitalize_first_letters(sentence):
+    words = sentence.split() 
+    capitalized_words = [word.capitalize() for word in words]  
+    return ' '.join(capitalized_words) 
+
+input_string = "hello world this is a test"
+print(capitalize_first_letters(input_string))  
